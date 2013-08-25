@@ -1,6 +1,6 @@
 ## Make ssh file connect from Mac to Cent OS
 
-### document
+### Document
 http://tanaka.sakura.ad.jp/archives/001065.html
 
 ### in Mac
