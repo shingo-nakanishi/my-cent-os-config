@@ -1,9 +1,9 @@
-# Make ssh file use connect from Mac to Cent OS in Mac
+## Make ssh file use connect from Mac to Cent OS in Mac
 
-## in Mac
+### in Mac
 ```
 $ ssh-keygen
 ```
 
-## in Cent OS
+### in Cent OS
 Paste public key to `~/.ssh/authorized_keys`
