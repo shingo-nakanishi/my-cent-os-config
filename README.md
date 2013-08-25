@@ -37,6 +37,7 @@ Install https://github.com/shingo-nakanishi/my-config
 ```
 $ ssh-keygen
 ```
+and register yourkey to GitHub.
 
 ### Make ssh config
 ```
