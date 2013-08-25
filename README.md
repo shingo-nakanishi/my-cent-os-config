@@ -61,4 +61,6 @@ Install https://github.com/shingo-nakanishi/my-config
 ### Document
 http://www.redmine.org/projects/redmine/wiki/Redmine_on_CentOS_installation_HOWTO
 
-
+```
+$ yum -y install zlib-devel curl-devel openssl-devel httpd-devel apr-devel apr-util-devel mysql-devel
+```
