@@ -22,6 +22,7 @@ $ yum install zsh
 ```
 
 ## Install my-config
+Install https://github.com/shingo-nakanishi/my-config
 ### Make ssh file use connect from Cent OS to Github
 ```
 $ ssh-keygen
