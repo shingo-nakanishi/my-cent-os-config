@@ -31,7 +31,7 @@ $ cat /etc/shells
 $ yum install zsh
 ```
 
-## Install my-config
+## Config SSH (You can git clone from GitHub)
 Install https://github.com/shingo-nakanishi/my-config
 ### Make ssh file connect from Cent OS to Github
 ```
@@ -53,3 +53,5 @@ host github.com
 ```
 $ eval `ssh-agent -s`
 $ ssh-add ~/.ssh/your_key
+```
+
