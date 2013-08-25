@@ -20,3 +20,19 @@ $ cat /etc/shells
 ```
 $ yum install zsh
 ```
+
+## Install my-config
+### Make ssh file use connect from Cent OS to Github
+```
+$ ssh-keygen
+```
+
+### Make ssh config
+```
+vim ~/.ssh/config
+
+host github.com
+   user git
+   hostname github.com
+   identityfile ~/.ssh/your_key
+```
