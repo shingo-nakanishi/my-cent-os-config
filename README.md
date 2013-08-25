@@ -20,10 +20,10 @@ $ cat /etc/shells
 ```
 
 ### only connect use public key
+Edit file `/etc/ssh/sshd_config`
 ```
-vim /etc/ssh/sshd_config
-
 PermitRootLogin without-password
+PasswordAuthentication no
 ```
 
 ### Install zsh
