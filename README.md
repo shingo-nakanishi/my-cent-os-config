@@ -1,4 +1,4 @@
-## Make ssh file use connect from Mac to Cent OS in Mac
+## Make ssh file use connect from Mac to Cent OS
 
 ### in Mac
 ```
