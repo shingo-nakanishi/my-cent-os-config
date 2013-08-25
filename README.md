@@ -83,7 +83,7 @@ $ cp database.yml.example database.yml
 $ gem install bundler
 $ cd /var/www/redmine
 $ b-install-local
-$ RAILS_ENV=production bundle exec rake generate_session_store
+$ RAILS_ENV=production bundle exec rake generate_secret_token
 $ RAILS_ENV=production bundle exec rake db:migrate
 $ RAILS_ENV=production bundle exec rake redmine:load_default_data
 $ cd /var/www/redmine/public
@@ -92,4 +92,10 @@ $ cd /var/www
 $ chown -R apache:apache redmine
 $ chmod -R 755 redmine
 $ b-rails s -e production
+```
+
+If got error `b-install-local`
+install ImageMagick-devel
+```
+$ yum install ImageMagick-devel
 ```
