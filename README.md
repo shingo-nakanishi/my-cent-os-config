@@ -1,4 +1,4 @@
-## Make ssh file use connect from Mac to Cent OS
+## Make ssh file connect from Mac to Cent OS
 
 ### in Mac
 ```
@@ -23,7 +23,7 @@ $ yum install zsh
 
 ## Install my-config
 Install https://github.com/shingo-nakanishi/my-config
-### Make ssh file use connect from Cent OS to Github
+### Make ssh file connect from Cent OS to Github
 ```
 $ ssh-keygen
 ```
