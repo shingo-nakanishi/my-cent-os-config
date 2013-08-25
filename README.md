@@ -91,4 +91,5 @@ $ cp htaccess.fcgi.example .htaccess
 $ cd /var/www
 $ chown -R apache:apache redmine
 $ chmod -R 755 redmine
+$ b-rails s -e production
 ```
