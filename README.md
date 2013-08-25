@@ -47,3 +47,8 @@ host github.com
    hostname github.com
    identityfile ~/.ssh/your_key
 ```
+
+### ssh agent
+```
+$ eval `ssh-agent -s`
+$ ssh-add ~/.ssh/your_key
