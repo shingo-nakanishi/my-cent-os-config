@@ -1,8 +1,8 @@
-## Make ssh file connect from Mac to Cent OS
-
-### Document
+## Document
 http://tanaka.sakura.ad.jp/archives/001065.html
 
+
+## Make ssh file connect from Mac to Cent OS
 ### in Mac
 ```
 $ ssh-keygen
@@ -11,19 +11,19 @@ $ ssh-keygen
 ### in Cent OS
 Paste public key to `~/.ssh/authorized_keys`
 
+### Only connect use public key
+Edit file `/etc/ssh/sshd_config`
+```
+PermitRootLogin without-password
+PasswordAuthentication no
+```
+
 ## Install zsh
 ### in Cent OS
 check zsh isn't installed
 
 ```
 $ cat /etc/shells
-```
-
-### only connect use public key
-Edit file `/etc/ssh/sshd_config`
-```
-PermitRootLogin without-password
-PasswordAuthentication no
 ```
 
 ### Install zsh
