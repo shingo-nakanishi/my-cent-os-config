@@ -56,3 +56,9 @@ $ ssh-add ~/.ssh/your_key
 
 ## Install my-config
 Install https://github.com/shingo-nakanishi/my-config
+
+## Install Redmine
+### Document
+http://www.redmine.org/projects/redmine/wiki/Redmine_on_CentOS_installation_HOWTO
+
+
