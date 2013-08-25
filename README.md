@@ -63,4 +63,32 @@ http://www.redmine.org/projects/redmine/wiki/Redmine_on_CentOS_installation_HOWT
 
 ```
 $ yum -y install zlib-devel curl-devel openssl-devel httpd-devel apr-devel apr-util-devel mysql-devel
+$ cd ~
+$ yum install gcc-c++
+$ git clone git@github.com:redmine/redmine.git
+$ gem install passenger
+$ mkdir /var/www/redmine
+$ cp -av redmine-1.3.2/* /var/www/redmine
+$ yum install mysql-server
+$ chkconfig mysqld on
+$ service mysqld start
+$ /usr/bin/mysql_secure_installation
+$ mysql -u root -p
+$ mysql> create database redmine character set utf8;
+$ mysql> create user 'redmine'@'localhost' identified by 'my_password';
+$ mysql> grant all privileges on redmine.* to 'redmine'@'localhost';
+$ mysql> \q
+$ cd /var/www/redmine/config
+$ cp database.yml.example database.yml
+$ gem install bundler
+$ cd /var/www/redmine
+$ b-install-local
+$ RAILS_ENV=production bundle exec rake generate_session_store
+$ RAILS_ENV=production bundle exec rake db:migrate
+$ RAILS_ENV=production bundle exec rake redmine:load_default_data
+$ cd /var/www/redmine/public
+$ cp htaccess.fcgi.example .htaccess
+$ cd /var/www
+$ chown -R apache:apache redmine
+$ chmod -R 755 redmine
 ```
